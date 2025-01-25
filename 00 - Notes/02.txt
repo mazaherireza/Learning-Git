@@ -1,0 +1,22 @@
+Installation
+------------
+...
+Choosing the default editor used by Git
+Which editor would you like Git to use?
+
+Adjusting the name of the initial branch in new repositories
+What would you like Git to name the initial branch after 'git init'?
+
+Let Git decide <---------- *
+----------------------------------------
+(In CMD)
+
+git --version
+git version 2.30.0.windows.1
+_______________________
+R Click
+
+Git GIU Here
+Git Bash Here
+
+Unix Based
