@@ -1,0 +1,22 @@
+git status
+
+On branch master
+No commits yet
+Changes to be commited:
+  (use "git rm --cashed <file> ..." to unstage) <------------------- *
+      new file: file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
+        file3.txt
+
+git add file2.txt file3.txt
+
+Up/Down Arrow
+
+git add .
+. <--------------- points to the current folder
+
+                      git add                    git commit
+[Working Directory -------------> Staging Area -------------> Repository]
