@@ -1,0 +1,7 @@
+git-scm.com
+git --everything-is-local
+
+Git is a free and open source distributed version control system ...
+-----------------------
+github.com
+Build and ship software on a single, collaborative platform
