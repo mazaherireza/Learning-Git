@@ -1,0 +1,70 @@
+git commit -m "Initial Commit" <--------------- Message (in present simple tense)
+
+Author identity unknown
+*** Please tell me who your are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the indentity only in this repository. <---------- *
+
+fatal: unable to auto-detect email address ...
+------------------
+git config --global user.email "rezamazaheri.email@gmail.com"
+git config --global user.name "Reza Mazaheri"
+
+git config user.name
+Reza Mazaheri
+
+git config user.email
+rezamazaheri.email@gmail.com
+------------------
+git commit -m "Initial Commit"
+[master (root-commit) 6c0c4a9] Initial Commit
+4 files changed, 0 insertions(+), 0 detections(-)
+create mdoe 100644 file1.txt
+...
+--------------------------------------------------------------
+git log
+commit 6c0c4a9...............92a (HEAD -> master)
+Author: ...
+Date: ...
+  
+    Initial Commit
+--------------------------------------------------------------
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file> ..."  to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:  file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+explainshell.com <------------- **
+
+git commit -a
+git commit 
+Record changes to the repository
+
+-a, --all
+Tell the command to automatically stage files that have been modified and deleted, 
+but NEW files you have not told git are not affected.
+
+** amend (to change the words of a text)
+Used to amend the tip of the current branch.
+-------------------------------------------
+git commit --amend <---------------------- **
+hint: Waiting for your editor to close the file ...
+
+In VS Code
+
+COMMIT_EDITMSG
+--------------
+Implement TheFooter Component
+# Please enter the commit message for your changes. ... 
+...
+# Changes to be commited:
+modified: TheMain.vue
+modified: TheFooter.vue
