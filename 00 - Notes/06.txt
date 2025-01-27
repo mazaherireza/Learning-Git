@@ -1,0 +1,17 @@
+git log
+commit d39e0...ccf (HEAD -> master)
+...
+
+Press "Q"
+
+git log --oneline <------------ **
+
+R Click
+Git GUI Here
+
+Repository   Help
+-------------------------
+Open Existing Repository <----------------- *
+
+GitKraken <----------------- Search in Google
+VS Code Extension: Git History
