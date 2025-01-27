@@ -1,0 +1,53 @@
+git branch
+* master 
+------------
+git branch bugfix
+git branch
+  bugfix
+* master
+
+git switch bugfix <--------------- *
+Switched to branch 'bugfix'
+
+git branch
+* bugfix
+  master
+
+git log
+commit 92...17 (HEAD -> bugfix) <-------------------- HEAD: Pointer
+
+[HEAD is a reference to the current commit on the currently checked-out branch,
+... pointing to the latest commit you're working on.
+HEAD can be thought of as the "current branch marker" or the "pointer to the active branch"
+]
+...
+commit 71...5a (master)
+...
+  Initial Commit
+-------------------------------
+git switch master
+Switched to branch 'master'
+...
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+...
+no changes added to commit (use "git add" and/or "git commit -a")
+
+git switch bugfix
+Switched to branch 'bugfix'
+M       file3.txt <----------------------- *
+
+git switch master
+Switched to branch 'master'
+M       file3.txt
+
+git satus
+...
+git add .
+git commit -m "Commit"
+-------------------------------
+git log --all --graph
+git log --oneline --all --graph
