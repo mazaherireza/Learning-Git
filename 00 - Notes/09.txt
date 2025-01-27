@@ -1,0 +1,28 @@
+git branch
+  develop
+* master
+
+git switch -c bugfix <------------------------------ **
+Switched to a new branch 'bugfix'
+
+(
+git branch x
+git switch x
+=
+git switch -c x
+)
+
+git branch -m bugfixTwo <------------------- ** Rename Current Branch
+(Rename)
+
+git branch -d bugfixTwo
+error: Cannot delete branch 'bugfixTwo' checkout at 'C:/...'
+
+git switch master
+...
+git branch -d bugfixTwo
+error: The branch 'bugfixTwo' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D bugfixTwo'
+	
+git branch -D bugfixTwo
+Deleted branch bugfixTwo (was 66a16c5).
