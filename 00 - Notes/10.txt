@@ -1,0 +1,17 @@
+git switch -c bugfix
+c <------------- Create
+
+There is no new commit on branch master <------------------ **
+
+git switch master <----------------- **
+git merge bugfix <----------------- **
+
+Updating 59106...
+Fast-forward <-------------- *
+...
+2 files changed, 8 insetions(+), 2 deletions(-)
+
+git log
+commit 39... (HEAD -> master, bugfix) <------------------- *
+... 
+There is no new commit <------------------ **
