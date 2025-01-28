@@ -1,0 +1,22 @@
+git commit -am "Commit 1 on bugfix"
+(a: add, m : message)
+...
+git switch master
+git merge bugfix
+
+Auto-merging ...
+CONFLICT (content): Merge conflict in ...
+Automatic merge failed; 
+Fix conflicts and then commit the result.
+
+Accept Current Change | Accept Incoming Change | Accept Both Changes | Compare Changes
+
+<<<<<<<< HEAD (Current Change)
+master <--------------------------------- master branch
+========
+bugfix <--------------------------------- bugfix branch
+>>>>>>>> bugfix (Incoming Change)
+
+git add .
+git commit -m "fix conflict"
+[master cb7daff] fix conflicts
