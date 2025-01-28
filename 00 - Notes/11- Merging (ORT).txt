@@ -1,0 +1,17 @@
+git switch master
+Already on 'master'
+
+git merge bugfix
+Merge made by the 'ort' strategy. <---------------- **
+...
+2 files changed, 6 insertions(+), 2 deletions(-)
+
+(git history VS Code extension)
+Commit Message: merge branch 'bugfix' <-------------- ** New commit (created by Git)
+_______________________
+ORT stands for Ostensibly Recursive's Twin.
+It's a new merge strategy introduced in Git to enhance performance and memory usage during 
+merge operations, ...
+
+Ostensibly
+** In a way that appears or claims to be one thing when it is really something else.
