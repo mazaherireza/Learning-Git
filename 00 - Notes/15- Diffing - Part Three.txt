@@ -1,0 +1,37 @@
+git diff commit1..commit2 <------------ Compare two commits
+Or 
+git diff commit1 commit2
+______________________________________________
+git log --oneline
+cc223d5 (HEAD -> master) ...
+ab7aaf9 ...
+1a220c4 ...
+4cb117c ...
+
+git diff 1a220c4..cc223d5 <-------------------- **
+diff --git a/colors.txt b/colors.txt
+index 836673f..fedac58 100644
+--- a/colors.txt
++++ b/colors.txt
+@@ -1,2 +1,4 @@
+red
+blue
++yellow
++green
+diff --git a/numbers.txt b/numbers.txt
+new file mode 100644
+index 00000000..f3fcc92
+--- /dev/null
++++ b/numbers.txt
+@@ -0,0 +1,4 @@
++one
++two
++three
++
+_______________________________
+...
+git switch -c bugfix
+_______________________________
+git diff branch1..branch2 <---------- Compare two branches
+
+git diff master..develop
