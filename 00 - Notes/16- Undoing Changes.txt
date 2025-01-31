@@ -1,0 +1,56 @@
+git branch
+* master
+bugfix
+
+git log --oneline <------------------------- (Current branch (master))
+cc223d5 (HEAD -> master) ...
+ab7aaf9 ...
+...
+
+git log --oneline --all <------------------------- (All branches)
+ff4952f (bugfix) ...
+cc223d5 (HEAD -> master) ... <---------------------- 
+...
+1a220c4 ...
+
+git checkout 1a220c4 <-------------------------- **
+Note: switching to '1a220c4'.
+
+You are in 'detached HEAD' state. <------------------------------------------------ *
+You can look around, make experimental changes and commit them, ...
+...
+If you want to create a new branch to retain commits you create, 
+you may do so (now or later) by using -c with the switch command. 
+Exmaple:
+
+  git switch -c <new-branch-name>
+
+git log --oneline --all
+ff4952f (bugfix) ...
+cc223d5 (master) ...
+ab7aaf9 ...
+1a220c4 (HEAD) ...
+...
+
+git switch master <---------------------------- **
+
+Previous HEAD position was 1a220c4 ... <-------------------------------------- *
+Switched to branch 'master'
+
+git log --oneline --all
+ff4952f (bugfix) ...
+cc223d5 (HEAD -> master) ...
+...
+
+git checkout HEAD
+git checkout HEAD~2
+...
+Or undo this operation with:
+  git switch - 
+
+git checkout HEAD index.ts <-------------------- (Changes in WD won't be applied.)
+Updated 1 path from d5e458a
+
+git checkout -- <file-name>
+Discards changes in the working directory.
+It reverts the specified file to the state of the last commit.
