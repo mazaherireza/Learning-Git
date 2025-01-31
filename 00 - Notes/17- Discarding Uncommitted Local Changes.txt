@@ -1,0 +1,38 @@
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified: MediaCard.vue
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+git restore MediaCard.vue
+
+...
+git add .
+git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage) <------------- *
+       modified:  index.ts
+
+git restore --staged index.ts
+git status
+On branch master 
+Changes not staged for commit:
+  (use "git add <file>..." to updated what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+     modified: index.ts
+
+...
+git restore index.ts
+
+git restore --source 9f63e95 App.vue <------------- **
+
+git log --oneline
+ef292a4 (HEAD -> master) 
+b87c3ac ...
+9f63e95 ...
+
+git restore --source HEAD~3 App.vue <------------- **
