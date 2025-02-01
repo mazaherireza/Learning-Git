@@ -1,0 +1,8 @@
+git commit -am "..."
+
+git reset 854891e <-------------------------- Changes in WD will be remained.
+Unstaged changes after reset:
+M    App.vue
+
+git reset --hard 854891e <-------------------------- Changes in WD will be cleared
+HEAD is now at 854891e
