@@ -1,0 +1,5 @@
+git stash drop stash@{3}
+Droped stash@{3} (7d...)
+
+git stash clear
+
