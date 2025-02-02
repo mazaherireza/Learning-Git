@@ -1,0 +1,36 @@
+git log --oneline
+7e4dd26 (HEAD -> master) add number five
+...
+git log --oneline --all
+...
+
+git switch master
+error: Your local changes to the following files would be overwritten by checkout:
+   numbers.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+git status
+On branch localBranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified: numbers.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+
+git stash
+Or 
+git stash save
+
+Saved working directory and index state WIP on ...
+(WIP stands for Work In Progress)
+git stash save "message"
+
+git switch master
+Switched to branch 'master'
+...
+
+git stash pop
+on branch localBranch
+...
+Dropped refs/stash@{0} (...)
