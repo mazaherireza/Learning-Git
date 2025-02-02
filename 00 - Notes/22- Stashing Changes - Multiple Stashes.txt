@@ -1,0 +1,11 @@
+git stash save "M1"
+Saved working directory and index state on ...: M1
+
+git stash save "M2"
+...
+
+git stash list
+stash@{0}: ...
+stash@{1}: ...
+
+git stash apply stash@{1}
