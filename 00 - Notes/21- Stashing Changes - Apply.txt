@@ -1,0 +1,5 @@
+git stash apply
+Auto-merging numbers.txt
+CONFLICT (content): Merge conflict in numbers.txt
+...
+git commit -am "..." 
