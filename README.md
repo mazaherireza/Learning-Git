@@ -1,1 +1,4 @@
-"# Learning Git" 
+### Learning Git
+
+- Git
+- Github
