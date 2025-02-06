@@ -1,0 +1,15 @@
+git clone
+
+2048 Github
+
+DownLoad ZIP <-------- (Without .git (Hidden folder))
+TERMINAL
+--------
+git clone <URL>
+...
+Cloning into '2048' ... <----------------------- .git
+
+(With .git (Hidden folder))
+
+gh-pages branch
+
