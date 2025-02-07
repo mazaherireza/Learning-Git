@@ -1,0 +1,11 @@
+git remote
+----------
+The git remote command lets you create, view and delete connections to other repositories. <-------- **
+
+git remote add <name> <URL> <--------------- name: label of URL
+
+git remote add origin https://github.com/mazaherireza/... 
+<---------- origin: label of https://github.com/mazaherireza/...
+
+git remote <-------------- List of remote(s)
+origin
