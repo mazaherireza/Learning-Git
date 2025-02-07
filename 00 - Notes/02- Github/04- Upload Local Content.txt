@@ -1,0 +1,13 @@
+git remote -v <----------------------- Verbose (With URL)
+
+origin https://github.com/rezamazaheri/... (fetch) <---------- label URL
+origin https://github.com/rezamazaheri/... (push)
+
+git push <remote> <branch>
+
+git push origin master
+Enumerating objects: 9, done.
+...
+To https://github.com/mazaherireza/
+...
+git push origin bugfix
